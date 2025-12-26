@@ -22,6 +22,7 @@ return {
           },
         },
         marksman = {},
+        pyright = {},
         -- regols is not maanged by Mason. i install it with `brew install kitagry/tap/regols`.
         -- See: https://github.com/kitagry/regols
         regols = {},
