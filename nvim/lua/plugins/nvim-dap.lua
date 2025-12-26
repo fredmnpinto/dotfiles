@@ -4,6 +4,7 @@ return {
     dependencies = {
       "leoluz/nvim-dap-go",
       "suketa/nvim-dap-ruby",
+      "mfussenegger/nvim-dap-python",
 
       "rcarriga/nvim-dap-ui",
       "theHamsta/nvim-dap-virtual-text",
@@ -16,6 +17,7 @@ return {
 
       require("dapui").setup()
       require("dap-go").setup()
+      require("dap-python").setup()
 
       require("nvim-dap-virtual-text").setup({})
 
@@ -49,8 +51,9 @@ return {
         }
       end
 
-      vim.keymap.set("n", "<space>b", dap.toggle_breakpoint)
-      vim.keymap.set("n", "<space>gb", dap.run_to_cursor)
+      vim.keymap.set("n", "<space>dt", dap.toggle_breakpoint)
+      vim.keymap.set("n", "<space>dc", dap.continue)
+      vim.keymap.set("n", "<space>dC", dap.run_to_cursor)
 
       -- Eval var under cursor
       vim.keymap.set("n", "<space>?", function()
