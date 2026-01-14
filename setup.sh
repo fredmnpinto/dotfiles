@@ -32,6 +32,8 @@ for config in "${!local_paths[@]}"; do
   fi
 
   if [ -e "$dst" ]; then
+    # Copy config in system into the repo
+    cp -r "$dst" ./
 
     # --- Backup local config if -d
     if [ "$backup_local_configs" = true ]; then
