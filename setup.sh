@@ -1,5 +1,6 @@
 #!/bin/bash
 backup_local_configs=true
+config_file="paths.json"
 
 while getopts 'd' OPTION; do
   case "$OPTION" in
@@ -11,8 +12,14 @@ done
 
 declare -A local_paths
 
-local_paths[nvim]="$HOME/.config/nvim"
-local_paths[hypr]="$HOME/.config/hypr"
+# Load JSON into associative array
+while IFS="=" read -r key value; do
+  # Expand ~ to $HOME
+  value="${value/#\~/$HOME}"
+  local_paths["$key"]="$value"
+done < <(
+  jq -r 'to_entries[] | "\(.key)=\(.value)"' "$config_file"
+)
 
 for config in "${!local_paths[@]}"; do
   src="$(pwd)/$config"

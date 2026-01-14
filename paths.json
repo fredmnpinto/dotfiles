@@ -1,0 +1,7 @@
+{
+  "nvim": "~/.config/nvim",
+  "hypr": "~/.config/hypr",
+  "kitty": "~/.config/kitty",
+  "waybar": "~/.config/waybar",
+  "fuzzel": "~/.config/fuzzel"
+}
