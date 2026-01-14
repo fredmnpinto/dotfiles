@@ -10,7 +10,9 @@ while getopts 'd' OPTION; do
 done
 
 declare -A local_paths
+
 local_paths[nvim]="$HOME/.config/nvim"
+local_paths[hypr]="$HOME/.config/hypr"
 
 for config in "${!local_paths[@]}"; do
   src="$(pwd)/$config"
