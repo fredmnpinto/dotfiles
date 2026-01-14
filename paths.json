@@ -3,5 +3,6 @@
   "hypr": "~/.config/hypr",
   "kitty": "~/.config/kitty",
   "waybar": "~/.config/waybar",
-  "fuzzel": "~/.config/fuzzel"
+  "fuzzel": "~/.config/fuzzel",
+  "gtk-4.0": "~/.config/gtk-4.0"
 }

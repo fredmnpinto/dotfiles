@@ -1,0 +1,24 @@
+.view, .navigation-sidebar, .top-bar {
+  background-color: #08080C;
+  color: #CDD6F4;
+}
+
+.view {
+  background-color: #CDD6F4;
+  color: #08080C;
+}
+
+.navigation-sidebar row {
+  transition: all 300ms;
+}
+
+.navigation-sidebar row:selected {
+  background-color: #F38BA8;
+  color: #6F0C28;
+  font-weight: bolder;
+}
+
+.navigation-sidebar row:hover {
+  background-color: #3D3E2E;
+  color: white;
+}
