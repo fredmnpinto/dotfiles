@@ -1,0 +1,143 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono, Helvetica, Arial, sans-serif;
+    min-height: 50px;
+}
+
+window#waybar {
+    background: transparent;
+    font-size: 1em;
+    color: #CDD6F4;
+    font-weight: bold;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces {
+  min-width: 180px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: #BB98B2;
+    margin: 0 5px;
+    padding-left: 0;
+    transition: font-size 200ms linear;
+}
+
+#workspaces button.focused,#workspaces button.active {
+  font-size: 2em;
+  color: #FAEFF7;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#mode, #clock, #battery {
+    padding: 0 10px;
+}
+
+#mode {
+    background: #64727D;
+    border-bottom: 3px solid white;
+}
+
+#clock {
+  font-size: 1.5em;
+  padding-top: 0.1em;
+}
+
+#battery {
+    background-color: #ffffff;
+    color: black;
+}
+
+#battery.charging {
+    color: white;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.modules-left, .modules-right, .modules-center {
+  background-color: #08080C;
+  padding: 0 1.5em;
+}
+
+.modules-left {
+  border-radius: 0 0 20 0;
+}
+
+.modules-center {
+  border-radius: 0 0 20 20;
+}
+
+.modules-right {
+  padding-right: 0;
+  border-radius: 0 0 0 20;
+}
+
+#custom-power {
+  font-size: 1.5em;
+
+  padding: 0 1em;
+
+  background-color: #CDD6F4;
+  color: #0A181E;
+
+  border-radius: 0 0 0 20;
+}
+
+menu {
+  background: #08080C;
+  color: #CDD6F4;
+  
+  border-radius: 20;
+  border-top-width: 2px;
+  
+  border-top-color: red;
+}
+
+menu menuitem {
+  /*padding-top: 10px; padding-bottom: 10px;*/
+  transition: all 200ms;
+}
+
+menu menuitem:hover {
+  background: #F38BA8;
+  color: #08080C;
+
+  border-radius: 50;
+
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
