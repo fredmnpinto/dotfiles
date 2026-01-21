@@ -1,5 +1,18 @@
 # Dotfiles
 
+## Requirements
+
+### System packages:
+- jq
+- waybar
+- neovim
+- hyprland
+- hyprlock
+- hypridle
+- fuzzel
+- kitty
+
+
 ## Setup
 Run `./setup.sh` to setup symbolic links from this repo to their respective local paths.
 
