@@ -2,16 +2,17 @@
 
 ## Requirements
 
-### System packages:
-- jq
-- waybar
-- neovim
-- hyprland
-- hyprlock
-- hypridle
-- fuzzel
-- kitty
+### System packages
+  - jq
+  - waybar
+  - neovim
+  - hyprland
+  - hyprlock
+  - hypridle
+  - fuzzel
+  - kitty
 
+---
 
 ## Setup
 Run `./setup.sh` to setup symbolic links from this repo to their respective local paths.
@@ -21,6 +22,8 @@ By default `setup.sh` will keep a .bak backup of any existing config files. If t
 
 ### Idempotency
 It's safe to run `setup.sh` multiple times as it will automatically detect if a symlink is already present and not try to create a duplicate if so.
+
+---
 
 ## Add new folders/configs
 1. Add the config file or folder to the root of the repo.
