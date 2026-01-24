@@ -13,7 +13,7 @@
     "hyprland/submap"
   ],
   "modules-center": [
-    "hyprland/window"
+    "clock"
   ],
   "modules-right": [
     "mpd",
@@ -21,9 +21,8 @@
     "network",
     "power-profiles-daemon",
     "keyboard-state",
-    "hyprland/language",
+    "battery",
     "tray",
-    "clock",
     "custom/power"
   ],
   // Modules configuration
@@ -34,7 +33,7 @@
     "format": "",
     "persistent-workspaces": {
       "*": 5
-    },
+    }
   },
   "keyboard-state": {
     "numlock": true,
@@ -112,9 +111,9 @@
   },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": "{essid} ({signalStrength}%)  ",
+    "format-wifi": " ",
     "format-ethernet": "{bandwidthDownBytes}  ",
-    "tooltip-format": "{ifname} via {gwaddr}",
+    "tooltip-format": "{ifname} on {essid} ({signalStrength}%)",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected  ",
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
