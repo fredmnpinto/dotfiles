@@ -132,7 +132,11 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
 
 source $HOME/.rvm/scripts/rvm
+POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+
+source /usr/share/nvm/init-nvm.sh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
