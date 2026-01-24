@@ -90,19 +90,29 @@ tooltip label {
 .modules-left, .modules-right, .modules-center {
   background-color: #08080C;
   padding: 0 1.5em;
+
+  border: 4px solid;
+  border-color: #70587C;
+  border-top: none;
 }
 
 .modules-left {
   border-radius: 0 0 20 0;
+
+  border-left: none
 }
 
 .modules-center {
   border-radius: 0 0 20 20;
+
+  border-top: none;
 }
 
 .modules-right {
   padding-right: 0;
   border-radius: 0 0 0 20;
+
+  border-right: none;
 }
 
 #custom-power {
