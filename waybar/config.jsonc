@@ -173,5 +173,20 @@
     },
     "icon": true,
     "max-length": 80
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} ",
+    "tooltip-format": "({capacity}%) {timeTo}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   }
 }
