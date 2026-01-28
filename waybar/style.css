@@ -1,3 +1,10 @@
+@define-color primary-color #FBFFFF;
+@define-color primary-bg #060E0C;
+
+@define-color secondary-color #BBC4C6;
+
+@define-color border-color #91972A;
+
 * {
     border: none;
     border-radius: 0;
@@ -8,12 +15,8 @@
 window#waybar {
     background: transparent;
     font-size: 1em;
-    color: #CDD6F4;
+    color: @primary-color;
     font-weight: bold;
-}
-
-window#waybar.empty #window {
-  background-color: transparent;
 }
 
 tooltip {
@@ -21,7 +24,7 @@ tooltip {
   border: 1px solid rgba(100, 114, 125, 0.5);
 }
 tooltip label {
-  color: white;
+  color: @primary-color;
 }
 
 #workspaces {
@@ -31,7 +34,7 @@ tooltip label {
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: #BB98B2;
+    color: @secondary-color;
     margin: 0 5px;
     padding-left: 0;
     transition: font-size 200ms linear;
@@ -39,7 +42,7 @@ tooltip label {
 
 #workspaces button.focused,#workspaces button.active {
   font-size: 2em;
-  color: #FAEFF7;
+  color: @primary-color;
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 0;
@@ -88,11 +91,11 @@ tooltip label {
 }
 
 .modules-left, .modules-right, .modules-center {
-  background-color: #08080C;
+  background-color: @primary-bg;
   padding: 0 1.5em;
 
   border: 4px solid;
-  border-color: #70587C;
+  border-color: @border-color;
   border-top: none;
 }
 
@@ -120,15 +123,15 @@ tooltip label {
 
   padding: 0 1em;
 
-  background-color: #CDD6F4;
+  background-color: #FBFFFF;
   color: #0A181E;
 
   border-radius: 0 0 0 20;
 }
 
 menu {
-  background: #08080C;
-  color: #CDD6F4;
+  background: #060E0C;
+  color: #FBFFFF;
   
   border-radius: 20;
   border-top-width: 2px;
@@ -142,12 +145,17 @@ menu menuitem {
 }
 
 menu menuitem:hover {
-  background: #F38BA8;
-  color: #08080C;
+  background: #969B8E;
+  color: #060E0C;
 
   border-radius: 50;
 
   font-size: 1.25em;
   font-weight: bold;
+}
+
+#battery {
+  background: #FBFFFF;
+  color: #060E0C;
 }
 
