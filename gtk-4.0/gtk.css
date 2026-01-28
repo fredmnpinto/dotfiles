@@ -1,11 +1,19 @@
+@define-color primary-color #FBFFFF;
+@define-color primary-bg #060E0C;
+
+@define-color lighter-bg #3A4141;
+@define-color darker-color #BBC4C6;
+
+@define-color highlight #91972A;
+
 .view, .navigation-sidebar, .top-bar {
-  background-color: #08080C;
-  color: #CDD6F4;
+  background-color: @primary-bg;
+  color: @primary-color;
 }
 
 .view {
-  background-color: white;
-  color: #08080C;
+  background-color: @primary-color;
+  color: @primary-bg;
 }
 
 .navigation-sidebar row {
@@ -13,12 +21,12 @@
 }
 
 .navigation-sidebar row:hover {
-  background-color: #4B2D39;
-  color: white;
+  background-color: @lighter-bg;
+  color: @darker-color;
 }
 
 .navigation-sidebar row:selected {
-  background-color: #F38BA8;
-  color: #6F0C28;
+  background-color: @highlight;
+  color: @darker-color;
   font-weight: bolder;
 }
