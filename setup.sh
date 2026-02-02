@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 backup_local_configs=true
 config_file="paths.json"
 
