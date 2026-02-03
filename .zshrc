@@ -134,10 +134,13 @@ unset __conda_setup
 
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 
-source /usr/share/nvm/init-nvm.sh
+[[ ! -f /usr/share/nvm/init-nvm.sh ]] || source /usr/share/nvm/init-nvm.sh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # opencode
 export PATH=/home/fred/.opencode/bin:$PATH
+
+
+[[ ! -f $HOME/.zsh_aliases ]] || source $HOME/.zsh_aliases
