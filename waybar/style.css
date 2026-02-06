@@ -8,8 +8,8 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: JetBrainsMono, Helvetica, Arial, sans-serif;
-    min-height: 50px;
+    font-family: Inter, Arial, sans-serif;
+    min-height: 0px;
 }
 
 window#waybar {
@@ -37,11 +37,11 @@ tooltip label {
     color: @secondary-color;
     margin: 0 5px;
     padding-left: 0;
-    transition: font-size 200ms linear;
+    transition: font-size 100ms linear;
 }
 
 #workspaces button.focused,#workspaces button.active {
-  font-size: 2em;
+  font-size: 1.5em;
   color: @primary-color;
   padding-top: 0;
   padding-bottom: 0;
@@ -60,7 +60,6 @@ tooltip label {
 
 #clock {
   font-size: 1.5em;
-  padding-top: 0.1em;
 }
 
 #battery {
@@ -119,6 +118,13 @@ tooltip label {
   color: #0A181E;
 
   border-radius: 0 0 0 20;
+
+  transition: all 350ms;
+}
+
+#custom-power:hover {
+  background-color: red;
+  color: @primary-color;
 }
 
 menu {
