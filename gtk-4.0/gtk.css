@@ -6,6 +6,10 @@
 
 @define-color highlight #91972A;
 
+* {
+  font-family: FiraCode Nerd Font Propo, Comic Sans;
+}
+
 .view, .navigation-sidebar, .top-bar {
   background-color: @primary-bg;
   color: @primary-color;
@@ -27,6 +31,6 @@
 
 .navigation-sidebar row:selected {
   background-color: @highlight;
-  color: @darker-color;
+  color: @primary-bg;
   font-weight: bolder;
 }
